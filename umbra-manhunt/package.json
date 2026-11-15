@@ -1,0 +1,14 @@
+{
+  "name": "umbra-manhunt",
+  "version": "1.0.0",
+  "description": "Umbra — a real-life GPS manhunt game. Hunters vs Shadows, on foot, on real streets.",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
