@@ -71,6 +71,26 @@ the host starts the game.
 
 ---
 
+## Install it as an app
+
+Umbra is a **PWA (installable web app)** — it adds a home-screen icon, launches
+fullscreen with no browser bars, and the shell opens offline. This needs an
+HTTPS URL (a tunnel or a host, as above); it won't offer to install over plain
+`http://` except on `localhost`.
+
+- **Android (Chrome):** open the link → tap **"Install Umbra as an app"** on the
+  start screen, or Chrome's menu → **Install app / Add to Home screen**.
+- **iPhone (Safari):** open the link → **Share** → **Add to Home Screen**.
+
+Once installed it looks and launches like a native app. (Gameplay still needs a
+connection — only the app shell is cached offline.)
+
+Want a real **Play Store / APK** build later? The PWA can be wrapped into a
+signed Android package with [Bubblewrap](https://github.com/GoogleChromeLabs/bubblewrap)
+or Capacitor without rewriting the game.
+
+---
+
 ## Settings (host, in the lobby)
 
 | Setting | Default | What it does |

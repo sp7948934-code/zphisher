@@ -4,6 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
   <title>Umbra — GPS Manhunt</title>
+  <meta name="description" content="A real-life GPS manhunt game. Hunters vs Shadows, on foot, on real streets." />
+  <meta name="theme-color" content="#0e0b1a" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Umbra" />
   <link rel="stylesheet"
         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -36,6 +45,9 @@
       <button type="submit" id="join-btn" class="primary">Join game</button>
       <p id="join-msg" class="msg" role="status"></p>
     </form>
+
+    <button id="install-btn" class="install" hidden>⤓&nbsp; Install Umbra as an app</button>
+    <p id="ios-hint" class="fineprint" hidden>Install on iPhone: tap the <b>Share</b> button, then <b>Add to Home Screen</b>.</p>
 
     <p class="fineprint">Playing shares your live location with the other players in your room, while the game is open. Play in a safe area, stay aware of traffic, and agree on boundaries before you start.</p>
   </section>

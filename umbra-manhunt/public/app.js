@@ -31,6 +31,44 @@
   let geoWatchId = null;
   let posSendTimer = null;
 
+  // ---- Install as an app (PWA) ----
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(() => { /* offline install is optional */ });
+    });
+  }
+
+  let deferredPrompt = null;
+  const installBtn = $('install-btn');
+  const iosHint = $('ios-hint');
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // Chrome/Edge/Android: stash the event and offer our own button.
+    e.preventDefault();
+    deferredPrompt = e;
+    if (installBtn) installBtn.hidden = false;
+  });
+  if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      installBtn.hidden = true;
+    });
+  }
+  window.addEventListener('appinstalled', () => {
+    if (installBtn) installBtn.hidden = true;
+  });
+  // iOS has no install prompt — show the Add-to-Home-Screen hint instead,
+  // unless we're already running as an installed app.
+  (function iosInstallHint() {
+    const isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
+    const standalone = window.navigator.standalone === true ||
+      (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+    if (isIos && !standalone && iosHint) iosHint.hidden = false;
+  })();
+
   // Restore name from a previous session (per-device convenience only).
   try {
     const saved = localStorage.getItem('umbra.name');

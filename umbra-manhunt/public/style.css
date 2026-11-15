@@ -96,6 +96,14 @@ button {
   background: var(--bg-2); border: 1px solid var(--line); font-size: 1.1rem;
 }
 .msg { min-height: 1.1em; margin: 2px 0 0; font-size: 0.85rem; color: var(--warn); }
+
+.install {
+  width: 100%; max-width: 22rem;
+  padding: 12px 16px; font-size: 0.95rem; font-weight: 700;
+  color: var(--fg); background: var(--bg-2);
+  border: 1px solid var(--accent); border-radius: 12px;
+}
+.install:active { transform: translateY(1px); }
 .fineprint { max-width: 24rem; font-size: 0.75rem; color: var(--muted); line-height: 1.5; opacity: 0.85; }
 
 /* ------------------------------- Game -------------------------------- */

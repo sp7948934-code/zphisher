@@ -1,0 +1,17 @@
+{
+  "name": "Umbra — GPS Manhunt",
+  "short_name": "Umbra",
+  "description": "A real-life GPS manhunt game. Hunters vs Shadows, on foot, on real streets.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0e0b1a",
+  "theme_color": "#0e0b1a",
+  "categories": ["games"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
