@@ -7,25 +7,42 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Sans,Poppins ExtraBold,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H90000000,0,0,0,0,100,100,1,0,1,3,5,5,70,70,0,1
-Style: Script,Yellowtail,124,&H0026D4F5,&H0026D4F5,&H00000000,&H90000000,0,0,0,0,100,100,0,0,1,3,5,5,70,70,0,1
+Style: Sans,Poppins ExtraBold,82,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,0,0,5,70,70,0,1
+Style: Script,Satisfy,140,&H003CD2F2,&H003CD2F2,&H00000000,&H80000000,0,0,0,0,100,100,0,0,1,0,0,5,70,70,0,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.18,0:00:01.12,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}WELCOME TO {\rScript}Nanking{\rSans}
-Dialogue: 0,0:00:01.12,0:00:02.47,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}INDIAN RESTAURANT, {\rScript}Artesia{\rSans}
-Dialogue: 0,0:00:02.47,0:00:03.92,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}PLANNING A FAMILY {\rScript}gathering{\rSans},
-Dialogue: 0,0:00:03.92,0:00:04.49,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}HOUSE {\rScript}party{\rSans}
-Dialogue: 0,0:00:04.49,0:00:05.33,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}OR OFFICE {\rScript}event{\rSans}?
-Dialogue: 0,0:00:05.33,0:00:06.94,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}WE'VE GOT YOUR CATERING {\rScript}covered{\rSans}
-Dialogue: 0,0:00:06.94,0:00:08.58,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}ENJOY DELICIOUS {\rScript}starters{\rSans},
-Dialogue: 0,0:00:08.58,0:00:09.76,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}FLAVORFUL {\rScript}curries{\rSans},
-Dialogue: 0,0:00:09.76,0:00:10.61,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}AROMATIC {\rScript}rice{\rSans}
-Dialogue: 0,0:00:10.61,0:00:11.99,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}AND FRESHLY MADE {\rScript}naan{\rSans}
-Dialogue: 0,0:00:11.99,0:00:13.76,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}MAKE EVERY OCCASION {\rScript}special{\rSans}
-Dialogue: 0,0:00:13.76,0:00:14.81,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}WITH GREAT {\rScript}food{\rSans},
-Dialogue: 0,0:00:14.81,0:00:15.56,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}GREAT {\rScript}company{\rSans}
-Dialogue: 0,0:00:15.56,0:00:16.96,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}AND MEMORABLE {\rScript}gatherings{\rSans}
-Dialogue: 0,0:00:16.96,0:00:17.83,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}CONTACT {\rScript}Nanking{\rSans}
-Dialogue: 0,0:00:17.83,0:00:19.46,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}INDIAN RESTAURANT IN {\rScript}Artesia{\rSans}
-Dialogue: 0,0:00:19.46,0:00:20.56,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}FOR CATERING {\rScript}today!{\rSans}
+Dialogue: 0,0:00:00.18,0:00:01.14,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}WELCOME TO\h\h{\rScript\1c&H000000&\1a&H40&\blur10}Nanking
+Dialogue: 1,0:00:00.18,0:00:01.14,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}WELCOME TO\h\h{\rScript}Nanking
+Dialogue: 0,0:00:01.14,0:00:02.47,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}INDIAN RESTAURANT\h\h{\rScript\1c&H000000&\1a&H40&\blur10}Artesia
+Dialogue: 1,0:00:01.14,0:00:02.47,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}INDIAN RESTAURANT\h\h{\rScript}Artesia
+Dialogue: 0,0:00:02.47,0:00:03.91,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}PLANNING A FAMILY\h\h{\rScript\1c&H000000&\1a&H40&\blur10}gathering
+Dialogue: 1,0:00:02.47,0:00:03.91,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}PLANNING A FAMILY\h\h{\rScript}gathering
+Dialogue: 0,0:00:03.91,0:00:04.49,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}HOUSE\h\h{\rScript\1c&H000000&\1a&H40&\blur10}party
+Dialogue: 1,0:00:03.91,0:00:04.49,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}HOUSE\h\h{\rScript}party
+Dialogue: 0,0:00:04.49,0:00:05.29,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}OR OFFICE\h\h{\rScript\1c&H000000&\1a&H40&\blur10}event
+Dialogue: 1,0:00:04.49,0:00:05.29,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}OR OFFICE\h\h{\rScript}event
+Dialogue: 0,0:00:05.29,0:00:06.94,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}WE'VE GOT YOUR CATERING\h\h{\rScript\1c&H000000&\1a&H40&\blur10}covered
+Dialogue: 1,0:00:05.29,0:00:06.94,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}WE'VE GOT YOUR CATERING\h\h{\rScript}covered
+Dialogue: 0,0:00:06.94,0:00:08.55,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}ENJOY DELICIOUS\h\h{\rScript\1c&H000000&\1a&H40&\blur10}starters
+Dialogue: 1,0:00:06.94,0:00:08.55,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}ENJOY DELICIOUS\h\h{\rScript}starters
+Dialogue: 0,0:00:08.55,0:00:09.69,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}FLAVORFUL\h\h{\rScript\1c&H000000&\1a&H40&\blur10}curries
+Dialogue: 1,0:00:08.55,0:00:09.69,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}FLAVORFUL\h\h{\rScript}curries
+Dialogue: 0,0:00:09.69,0:00:10.57,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}AROMATIC\h\h{\rScript\1c&H000000&\1a&H40&\blur10}rice
+Dialogue: 1,0:00:09.69,0:00:10.57,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}AROMATIC\h\h{\rScript}rice
+Dialogue: 0,0:00:10.57,0:00:11.98,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}AND FRESHLY MADE\h\h{\rScript\1c&H000000&\1a&H40&\blur10}naan
+Dialogue: 1,0:00:10.57,0:00:11.98,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}AND FRESHLY MADE\h\h{\rScript}naan
+Dialogue: 0,0:00:11.98,0:00:13.80,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}MAKE EVERY OCCASION\h\h{\rScript\1c&H000000&\1a&H40&\blur10}special
+Dialogue: 1,0:00:11.98,0:00:13.80,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}MAKE EVERY OCCASION\h\h{\rScript}special
+Dialogue: 0,0:00:13.80,0:00:14.81,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}WITH GREAT\h\h{\rScript\1c&H000000&\1a&H40&\blur10}food
+Dialogue: 1,0:00:13.80,0:00:14.81,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}WITH GREAT\h\h{\rScript}food
+Dialogue: 0,0:00:14.81,0:00:15.57,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}GREAT\h\h{\rScript\1c&H000000&\1a&H40&\blur10}company
+Dialogue: 1,0:00:14.81,0:00:15.57,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}GREAT\h\h{\rScript}company
+Dialogue: 0,0:00:15.57,0:00:16.98,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}AND MEMORABLE\h\h{\rScript\1c&H000000&\1a&H40&\blur10}gatherings
+Dialogue: 1,0:00:15.57,0:00:16.98,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}AND MEMORABLE\h\h{\rScript}gatherings
+Dialogue: 0,0:00:16.98,0:00:17.86,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}CONTACT\h\h{\rScript\1c&H000000&\1a&H40&\blur10}Nanking
+Dialogue: 1,0:00:16.98,0:00:17.86,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}CONTACT\h\h{\rScript}Nanking
+Dialogue: 0,0:00:17.86,0:00:19.50,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}INDIAN RESTAURANT IN\h\h{\rScript\1c&H000000&\1a&H40&\blur10}Artesia
+Dialogue: 1,0:00:17.86,0:00:19.50,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}INDIAN RESTAURANT IN\h\h{\rScript}Artesia
+Dialogue: 0,0:00:19.50,0:00:20.56,Sans,,0,0,0,,{\pos(545,967)\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)\1c&H000000&\1a&H40&\blur10}FOR CATERING\h\h{\rScript\1c&H000000&\1a&H40&\blur10}today
+Dialogue: 1,0:00:19.50,0:00:20.56,Sans,,0,0,0,,{\fad(60,40)\fscx85\fscy85\t(0,140,\fscx100\fscy100)}FOR CATERING\h\h{\rScript}today
